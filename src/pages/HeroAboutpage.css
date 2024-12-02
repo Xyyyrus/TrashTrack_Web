@@ -1,0 +1,95 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+    background: linear-gradient(to right, #02413C, #05A79A); 
+    color: white;
+  }
+  
+  .text-container {
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  h3{
+    color:  #02FC66;
+  }
+  
+  .highlight {
+    color:  #02FC66;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #ffffff; /* Light gray text color */
+  }
+  
+  .button-container {
+    margin-top: 30px;
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    }
+  .get-started-btn, .contact-demo-btn {
+    padding: 15px 30px;  
+    width: 200px;  /* Set a fixed width */
+    height: 60px;  /* Set a fixed height */
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  
+  .get-started-btn {
+    background: linear-gradient(to right, #22CB66, #02FC66);
+    color: white;
+    border: none;
+    margin-right: 15px;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .contact-demo-btn {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+  }
+  
+  .contact-demo-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+  
+  .image-container {
+    max-width: 400px;
+  }
+  
+  .image-container img {
+    width:400;
+     height:240; 
+  }
+  h1{
+    color: #ffffff;
+  }
+  @media (max-width: 480px) {
+    .image-container img {
+      width:200;
+       height:120; 
+    }
+  }

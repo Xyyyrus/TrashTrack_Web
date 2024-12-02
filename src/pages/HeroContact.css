@@ -1,0 +1,128 @@
+.hero-containercss {
+  display: flex;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center; /* Vertically centers the content */
+  height: 70vh; /* Sets the height to the full viewport height */
+  background: linear-gradient(to right, #02413C, #05A79A); 
+  color: white;
+}
+
+
+.text-container {
+  max-width: 600px;
+  flex: 1 1 100%; /* Take full width on smaller screens */
+  padding-right: 20px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow the contact details to wrap on smaller screens */
+}
+
+.contact-left, .contact-right {
+  flex: 1 1 45%; /* Adjust width for better responsiveness */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h3 {
+  color: azure;
+}
+
+
+
+.highlight {
+  color: #02FC66;
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  margin-top: 30px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.get-started-btn, .contact-demo-btn {
+  padding: 15px 30px;  
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.get-started-btn {
+  background: linear-gradient(to right, #22CB66, #02FC66);
+  color: white;
+  border: none;
+  margin-right: 15px;
+}
+
+.get-started-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.contact-demo-btn {
+  background-color: white;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+}
+
+.contact-demo-btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.image-container {
+  max-width: 400px;
+  flex: 1 1 100%; /* Take full width on smaller screens */
+  text-align: center; /* Center the image */
+  margin-top: 20px; /* Add some space on mobile view */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 40px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .contact-left, .contact-right {
+    flex: 1 1 100%; /* Stack the contact details vertically */
+    margin-bottom: 10px;
+  }
+}
+
+h1 {
+  color: #ffffff;
+}

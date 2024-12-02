@@ -1,0 +1,76 @@
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between grid items */
+  padding: 40px; /* Unified padding on all sides */
+  background: linear-gradient(to right, #02413C, #05A79A); /* Background gradient */
+  color: white;
+}
+
+.feature-card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out; /* Smooth scaling */
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+  align-items: center; /* Center items */
+  justify-content: space-between; /* Space items evenly */
+}
+
+.feature-card img {
+  width: 50px; /* Explicit width */
+  height: 50px; /* Explicit height */
+}
+
+.feature-card:hover {
+  transform: scale(1.02); /* Slight scale on hover */
+}
+
+.feature-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.feature-content {
+  margin-top: 1rem;
+  flex-grow: 1; /* Allow this section to grow */
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #0bb92b; /* Green title color */
+}
+
+.feature-description {
+  color: #000000; /* Black description text */
+  font-size: 1rem; /* Consistent font size */
+  line-height: 1.5; /* Improved readability */
+}
+.features-container h3{
+  color:#09a626;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .features-container {
+    grid-template-columns: 1fr; /* Single column on small screens */
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .feature-card {
+    width: 100%; /* Full width for cards on small screens */
+    padding: 1rem; /* Reduced padding */
+  }
+
+  .feature-title {
+    font-size: 1.1rem; /* Slightly smaller title on small screens */
+  }
+
+  .feature-description {
+    font-size: 0.9rem; /* Slightly smaller description on small screens */
+  }
+}

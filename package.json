@@ -1,0 +1,69 @@
+{
+  "name": "trashtrack-admin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/cache": "^11.13.5",
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.0.14",
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/joy": "^5.0.0-beta.48",
+    "@mui/material": "^5.16.7",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@mui/styles": "^6.1.5",
+    "@mui/x-charts": "^7.16.0",
+    "@mui/x-date-pickers": "^7.13.0",
+    "@react-google-maps/api": "^2.19.3",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "cli": "^1.0.1",
+    "crypto": "^1.0.1",
+    "dayjs": "^1.11.13",
+    "express": "^4.21.1",
+    "firebase": "^10.14.1",
+    "firebase-admin": "^13.0.1",
+    "firebase-functions": "^6.1.1",
+    "firebase-tools": "^13.22.1",
+    "leaflet": "^1.9.4",
+    "leaflet-control-geocoder": "^2.4.0",
+    "leaflet-geosearch": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.5",
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^6.26.1",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.12",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

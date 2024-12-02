@@ -1,0 +1,81 @@
+html, body {
+  height: 100%; /* Ensures body takes up the full viewport height */
+  margin: 0; /* Reset default margins */
+  padding: 0; /* Reset default padding */
+  background: linear-gradient(to right, #02413C, #05A79A); /* Same background gradient as your features container */
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(768px));
+  gap: 20px;
+  padding: 40px; /* Unified padding on all sides for equal space */
+  color: white;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: scale(1.02);
+}
+
+.feature-icon {
+  display: block;
+  margin: 0 auto;
+  max-width: 80px;
+  height: auto;
+}
+
+.feature-content {
+  margin-top: 1rem;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #02413C;
+}
+
+.feature-description {
+  color: #777;
+}
+
+/* Footer Styles */
+.Footer {
+  height: 100px; /* Define a height for your footer */
+  width: 100%; /* Full width */
+  margin-top: 20px; /* Space between features and footer */
+  display: flex; /* Use flex to center any content if needed in future */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+  background-color: #02413C; /* Footer background to match your main color */
+}
+
+/* Reset margin and padding for footer and any other elements */
+h3, p, .Footer {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .features-container {
+      grid-template-columns: 1fr;
+      padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .feature-card {
+      width: 100%;
+  }
+
+  .Footer {
+      height: 80px; /* Adjusted footer height for smaller screens if needed */
+  }
+}

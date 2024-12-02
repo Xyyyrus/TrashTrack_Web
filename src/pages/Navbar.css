@@ -1,0 +1,92 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #02413C;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  color: #7fc242;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: white;
+  margin: 0 15px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #7fc242;
+}
+
+.app-button {
+  background-color: #02FC66 !important;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.app-button:hover {
+  background-color: #02FC66;
+}
+
+/* Hamburger icon for mobile */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide links initially on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #02413C;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar-links a {
+    margin: 10px 0; /* Spacing between items in mobile menu */
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Show links when menu is active */
+.navbar-links.active {
+  display: flex;
+}

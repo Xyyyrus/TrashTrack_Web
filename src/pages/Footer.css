@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background-color: #343a40;
+}
+
+.dashboard-mockup .list-group-item {
+  cursor: pointer;
+}
+
+.dashboard-mockup .list-group-item.active {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.footer .left-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer .dlbutton {
+  background-color: #1c1c1c; /* Dark background */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #ffffff; /* White link color */
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+/* Add custom styles for the hero section and mockup dashboard here */
+.hero {
+  background: #343a40;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.dashboard-mockup {
+  margin-top: 50px;
+}
+
+/* Footer.css */
+
+.footer {
+  background-color: #1c1c1c; /* Dark background */
+  color: #ffffff; /* White text color */
+  padding: 20px 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #ffffff; /* White link color */
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #00EE5F; /* Highlight color on hover */
+}
+
+.footer a:focus {
+  outline: none;
+  color: #00EE5F; /* Highlight color on focus */
+}
+
+.footer .text-white {
+  color: #ffffff !important;
+}
+
+.footer .mx-2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer div {
+    margin-bottom: 10px;
+  }
+}

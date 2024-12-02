@@ -1,0 +1,85 @@
+.features-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to 1 column for small screens */
+  gap: 15px;
+  padding: 8px;
+  background: linear-gradient(to right, #02413C, #05A79A); /* Dark enough for white text */
+  color: white;
+}
+
+.feature-card {
+  background-color: #f2f2f2; /* Lighter background for readability */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.feature-icon {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+
+.feature-title {
+  font-size: 1rem; /* Increased font size */
+  margin-bottom: 0.5rem;
+  color: #02413C; /* Ensures good contrast on light background */
+}
+
+.feature-description {
+  color: #333; /* Darker text for improved readability */
+  font-size: 0.85rem; /* Slightly increased description font size */
+}
+
+/* Button styles for improved contrast */
+.app-button, .contact-demo-btn {
+  background-color: #02413C; /* Darker background color */
+  color: white; /* White text for better contrast */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.features-container h3{
+ color: #09a626
+}
+.app-button:hover, .contact-demo-btn:hover {
+  background-color: #01594F; /* Lighter but still high contrast */
+}
+
+/* Media Query for larger screens */
+@media (min-width: 1200px) {
+  .features-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+  }
+}
+
+/* Media Query for very small screens */
+@media (max-width: 768px) {
+  .features-container {
+    padding: 5px; /* Reduced padding */
+  }
+
+  .feature-card {
+    padding: 0.4rem;
+    max-width: 85%; /* Adjust card width */
+  }
+
+  .feature-icon {
+    width: 35px; /* Smaller icon for mobile */
+    height: 35px;
+  }
+
+  .feature-title {
+    font-size: 0.85rem; /* Slightly smaller text size */
+  }
+
+  .feature-description {
+    font-size: 0.75rem; /* Smaller description */
+  }
+}
